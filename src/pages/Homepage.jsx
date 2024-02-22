@@ -12,11 +12,11 @@ const Homepage = () => {
     return (
         <div className="container-fluid mt-3">
             <div className="row">
-                <div className="col-md-12 bg-light" style={{backgroundImage:"linear-Gradient(to right,blue,purple)",color:"wheat"}}>
+                <div className="col-md-12 bg-light" style={{backgroundImage:'linear-gradient(to right,blue,purple)',color:"wheat"}}>
                     <div className="p-5">
                         <h3>Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, eius!</p>
-                        <button className='btn btn-outline-secondary'>Read More</button>
+                        <button className='btn btn-outline-secondary' style={{backgroundColor:"white",color:"black"}}>Read More</button>
                     </div>
                 </div>
             </div>
@@ -25,12 +25,13 @@ const Homepage = () => {
                 <div className="row">
                     <div className="col-md-12 mb-4">
                         <h3>Classes</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, expedita esse nisi sint dolore beatae.</p>
                     </div>
                     {
                         classData && classData?.map((el) => {
                             return <div key={el.ID} className="col-md-4 mb-4">
                                 <div className="card">
-                                    <img src={el.ImageUrl} alt="" />
+                                    <img src="images/training-certification/Simplified-Technical-English.jpg" alt="" />
                                     <div className="card-body text-start">
                                         <h3>{el.Name}</h3>
                                         <p>{el.ShortDesc.substring(0,150)}..</p>
@@ -44,7 +45,7 @@ const Homepage = () => {
 
             </div>
 
-            <div className="container">
+            <div className="container mt-5 p-3">
                 <div className="row">
                     <div className="col-md-6">
                         <p>Copyright © 2021. All right reserved </p>
